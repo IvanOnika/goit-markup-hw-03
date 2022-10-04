@@ -24,19 +24,31 @@ a {
   text-decoration: none;
 }
 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+  margin: 0px;
+} 
+
 .container {
   width: 1200px;
   margin-top: 24px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 /*Хедер*/
 .menu {
   display: flex;
   align-items: baseline;
+  margin-bottom: 24px;
 }
 
 .logo {
@@ -55,7 +67,7 @@ a {
   margin-left: 314px;
 }
 
-.contacts a:first-child{
+.contacts a:first-child {
   margin-right: 50px;
 }
 
@@ -118,14 +130,23 @@ body {
 }
 /*Герой*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
   text-align: center;
 }
 .hero-title {
-  padding-top:px;
-  margin-bottom: 30px;
+  padding-top: px;
 }
 
 /*Кнопка*/
+
+button{
+margin-top: 40px;
+padding: 10px 32px;
+border-radius: 4px;
+border-color:var(--accent-color) ;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .studio {
   background-color: #2196f3;
