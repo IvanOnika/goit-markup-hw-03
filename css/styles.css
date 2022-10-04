@@ -1,4 +1,4 @@
-html{
+html {
   box-sizing: border-box;
 }
 
@@ -7,7 +7,6 @@ html{
 *::after {
   box-sizing: inherit;
 }
-
 
 :root {
   --primary-text-color: #757575;
@@ -18,46 +17,60 @@ html{
 
 ul {
   list-style: none;
+  margin: 0px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
+.container {
   width: 1200px;
+  margin-top: 24px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /*Хедер*/
-.menu{
+.menu {
   display: flex;
-  justify-content: space-around;
-  border: 2px solid green;
+  align-items: baseline;
 }
 
-.logo{
-  margin-left: 215px;
+.logo {
+  margin-right: 94px;
+}
+
+.list-item {
+  margin-right: 50px;
+}
+
+.list-item:last-child {
+  margin-right: 0px;
+}
+
+.contacts {
+  margin-left: 314px;
+}
+
+.contacts a:first-child{
+  margin-right: 50px;
 }
 
 /* навігація в хедері*/
 
-a .logo{
+a .logo {
   display: inline-block;
-  border: 2px solid red;
 }
 
-ul{
+ul {
   display: inline-block;
   padding-inline-start: 0px;
-  border: 2px solid black;
-  margin: 0px;
 }
-.site-nav li{
+.site-nav li {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .site-nav a {
@@ -69,30 +82,30 @@ ul{
 
 .site-nav a:hover,
 .site-nav a:focus {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-li .page{
+li .page {
   color: var(--accent-color);
 }
 
 /*Контакти в хедері*/
-header{
+header {
   display: inline-block;
-}
- .contacts {
-  display: inline-block;
-  border: 2px solid red;
 }
 .contacts {
+  display: inline-block;
+}
+
+.contacts a {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts a:hover,
+.contacts a:focus {
   color: var(--accent-color);
 }
 
@@ -104,6 +117,13 @@ body {
   color: var(--primary-text-color);
 }
 /*Герой*/
+.hero {
+  text-align: center;
+}
+.hero-title {
+  padding-top:px;
+  margin-bottom: 30px;
+}
 
 /*Кнопка*/
 
@@ -120,7 +140,7 @@ body {
   color: aliceblue;
 }
 
-.studio{
+.studio {
   cursor: pointer;
 }
 
@@ -208,14 +228,13 @@ footer {
   color: var(--primary-white-color);
 }
 
-address{
+address {
   font-style: normal;
 }
 
-.location a{
+.location a {
   color: var(--primary-white-color);
 }
-
 
 /*Портфоліо*/
 
@@ -252,4 +271,3 @@ address{
   line-height: 1.87;
   color: var(--primary-text-color);
 }
-
