@@ -36,23 +36,32 @@ ul {
 }
 
 .container {
-  width: 1200px;
-  margin-top: 24px;
+  max-width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ececec;
+ 
 }
 
 /*Хедер*/
 .menu {
   display: flex;
   align-items: baseline;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px; 
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
+  font-family: Raleway, cursive;
   margin-right: 94px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #000;
+}
+.logo-color {
+  color: var(--accent-color);
 }
 
 .list-item {
@@ -133,9 +142,32 @@ body {
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
+  background-color: #2f303a;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .hero-title {
-  padding-top: px;
+  font-family: "Roboto", sans-serif;
+  max-width: 696px;
+  margin: 0px auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
 }
 
 /*Кнопка*/
@@ -144,7 +176,6 @@ button {
   margin-top: 40px;
   padding: 10px 32px;
   border-radius: 4px;
-  border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -165,21 +196,60 @@ button {
   cursor: pointer;
 }
 
-.hero {
-  background-color: #2f303a;
+/*Секція-1*/
+
+.methods-list {
+  display: flex;
+  padding-top: 94px;
+  text-align: center;
 }
 
-.hero-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: var(--primary-white-color);
-  text-transform: uppercase;
+.list-item-method:last-child {
+  margin-right: 0px;
+}
+
+.list-item-method {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.method-titles {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+
+.about-method {
+  text-align: left;
+  padding-top: 10px;
+}
+
+/*Секція-2*/
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-item-benefits {
+  display: flex;
+}
+
+.list-examples {
+  margin-right: 30px;
+}
+
+.list-examples:last-child {
+  margin-right: 0px;
+}
+
+.example-photo{
+  display: block;
 }
 
 .section-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -188,31 +258,40 @@ button {
   color: var(--title-text-color);
 }
 
-.hero .section-title {
-  color: var(--primary-white-color);
-}
-
-.titles {
+/*.titles {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}*/
+
+/*Секція-3*/
+
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-between;
 }
 
-.logo {
-  font-family: Raleway, cursive;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  color: #000;
+.team-card {
+  padding-bottom: 30px;
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.logo-color {
-  color: var(--accent-color);
+
+.team-card:last-child {
+  padding-right: 0px;
 }
 
 .team-names {
+  padding-top: 30px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -220,18 +299,45 @@ button {
 }
 
 .job-title {
+  padding-top: 10px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-text-color);
 }
 
+.photo{
+  display: block;
+}
+
 /*Footer*/
+
 .logo-footer {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   color: var(--primary-white-color);
+}
+
+.footer-content{
+  padding-top: 60px;
+}
+
+address{
+  padding-top: 20px;
+}
+
+.location{
+  padding-bottom: 9px;
+}
+
+.location:last-child{
+  padding-bottom: 0px;
+}
+
+.footer-nav{
+  padding-bottom: 60px;
 }
 
 footer {
