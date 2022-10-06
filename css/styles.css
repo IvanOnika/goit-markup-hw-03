@@ -42,13 +42,17 @@ ul {
   margin-right: auto;
 }
 
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*Хедер*/
 .menu {
   display: flex;
   align-items: baseline;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -136,6 +140,12 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+
+.header-border{
+    border-bottom: 1px solid #ececec;
+}
+
+
 /*Герой*/
 .hero {
   padding-top: 200px;
@@ -227,10 +237,11 @@ button {
 
 /*Секція-2*/
 
-.benefits {
+  /*.benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+}*/
+
 
 .list-item-benefits {
   display: flex;
@@ -308,6 +319,10 @@ button {
 
 .photo {
   display: block;
+}
+
+.background-color{
+  background-color: #F5F4FA;;
 }
 
 /*Footer*/
