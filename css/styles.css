@@ -68,7 +68,7 @@ ul {
   color: var(--accent-color);
 }
 
-.list-nav{
+.list-nav {
   margin-left: 93px;
 }
 
@@ -80,11 +80,11 @@ ul {
   margin-right: 0px;
 }
 
-.contacts{
+.contacts {
   display: flex;
 }
 
-.contact-item:first-child{
+.contact-item:first-child {
   margin-right: 50px;
 }
 
@@ -125,15 +125,15 @@ li .page {
 
 /*Контакти в хедері*/
 
-.contacts{
+.contacts {
   margin-left: 344px;
 }
 
-.contact-item{
+.contact-item {
   margin-right: 0px;
 }
 
-.contacts:first-child{
+.contacts:first-child {
   margin-right: 50px;
 }
 
@@ -301,6 +301,11 @@ button {
   justify-content: space-between;
 }
 
+.about-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-card {
   padding-bottom: 30px;
   width: 270px;
@@ -316,7 +321,6 @@ button {
 }
 
 .team-names {
-  padding-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
