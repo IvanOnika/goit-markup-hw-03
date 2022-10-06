@@ -42,22 +42,23 @@ ul {
   margin-right: auto;
 }
 
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /*Хедер*/
-.menu {
+.container-header {
   display: flex;
   align-items: baseline;
   padding-top: 24px;
   padding-bottom: 24px;
+  height: 80px;
+  margin: auto;
 }
 
 .logo {
   font-family: Raleway, cursive;
-  margin-right: 94px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -65,6 +66,10 @@ ul {
 }
 .logo-color {
   color: var(--accent-color);
+}
+
+.list-nav{
+  margin-left: 93px;
 }
 
 .list-item {
@@ -75,11 +80,11 @@ ul {
   margin-right: 0px;
 }
 
-.contacts {
-  margin-left: 314px;
+.contacts{
+  display: flex;
 }
 
-.contacts a:first-child {
+.contact-item:first-child{
   margin-right: 50px;
 }
 
@@ -93,6 +98,11 @@ ul {
   display: inline-block;
   padding-inline-start: 0px;
 }
+
+.site-nav {
+  display: flex;
+}
+
 .site-nav li {
   display: inline-block;
 }
@@ -114,11 +124,17 @@ li .page {
 }
 
 /*Контакти в хедері*/
-header {
-  display: inline-block;
+
+.contacts{
+  margin-left: 344px;
 }
-.contacts {
-  display: inline-block;
+
+.contact-item{
+  margin-right: 0px;
+}
+
+.contacts:first-child{
+  margin-right: 50px;
 }
 
 .contacts a {
@@ -141,15 +157,14 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-border{
-    border-bottom: 1px solid #ececec;
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
-
 
 /*Герой*/
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
 }
@@ -224,6 +239,7 @@ button {
 }
 
 .method-titles {
+  text-align: start;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -237,11 +253,10 @@ button {
 
 /*Секція-2*/
 
-  /*.benefits {
+/*.benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }*/
-
 
 .list-item-benefits {
   display: flex;
@@ -321,8 +336,8 @@ button {
   display: block;
 }
 
-.background-color{
-  background-color: #F5F4FA;;
+.background-color {
+  background-color: #f5f4fa;
 }
 
 /*Footer*/
@@ -375,14 +390,12 @@ address {
 }
 
 .location a {
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.address-footer:first-child{
+.address-footer:first-child {
   color: var(--primary-white-color);
 }
-
-
 
 /*Портфоліо*/
 
