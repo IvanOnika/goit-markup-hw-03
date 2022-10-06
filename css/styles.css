@@ -421,8 +421,8 @@ address {
 }
 
 .control-btn {
+  border: 0px;
   margin-top: 0px;
-  border-color: #f5f4fa;
 }
 
 .control-btn:hover {
