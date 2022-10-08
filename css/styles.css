@@ -42,7 +42,7 @@ ul {
   margin-right: auto;
 }
 
-.section {
+.content {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -225,7 +225,6 @@ button {
 
 .methods-list {
   display: flex;
-  padding-top: 94px;
   text-align: center;
 }
 
@@ -275,7 +274,7 @@ button {
 }
 
 .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -297,7 +296,6 @@ button {
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -340,7 +338,7 @@ button {
   display: block;
 }
 
-.background-color {
+.content-bcgnd {
   background-color: #f5f4fa;
 }
 
@@ -352,10 +350,6 @@ button {
   font-weight: 700;
   line-height: 1.19;
   color: var(--primary-white-color);
-}
-
-.footer-content {
-  padding-top: 60px;
 }
 
 address {
@@ -376,6 +370,8 @@ address {
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* навігація в футері*/
